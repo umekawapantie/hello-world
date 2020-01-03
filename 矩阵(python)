@@ -1,0 +1,16 @@
+n,digit=input().split()
+n=int(n)
+digit=int(digit)
+for t in range(n):
+    a=[]
+    if t==0 or t==n-1:
+        for i in range (n):
+            a.append(digit)
+        print(' '.join('%s'%i for i in a))
+    else:
+        for i in range(n):
+            if i==0 or i==n-1:
+                a.append(digit)
+            else:
+                a.append(digit-1)
+        print(' '.join('%s'%i for i in a))
